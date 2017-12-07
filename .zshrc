@@ -38,12 +38,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/sbin:/usr/lib64/ruby/gems:/home/violet/bin
-export QA_SSH_PRIVATE=/home/violet/.ssh/id_rsa
-export QA_SSH_PUBLIC=/home/violet/.ssh/id_rsa.pub
-export PRIVATE_TOKEN=9qNCJ96UWeahQbzWUzgHG
-export GPG_KEY=32F45A8B
-export DEBFULLNAME="Violet Feng"
-export DEBEMAIL="violet.feng@canonical.com"
 
 #color{{{
 autoload colors
@@ -333,3 +327,6 @@ alias tarballgz="tar czf"
 alias tarballbz2="tar cjf"
 alias tarballxz="tar cJf"
 alias bzrlog="bzr log -p | colordiff | more"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
